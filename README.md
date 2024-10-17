@@ -9,7 +9,7 @@ NamecardTools
 ![project status](https://img.shields.io/badge/project_status-ideas-8a2be2)
 
 
-A React Web App for doing certain things with Genshin Impact's namecards!
+A NextJS Web App for doing certain things with Genshin Impact's namecards!
 
 It might not amount to anything, this is just an idea I happened to have.
 
