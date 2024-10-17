@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: theme("colors.violet.50");
+  --foreground: theme("colors.violet.950");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: theme("colors.violet.950");
+    --foreground: theme("colors.violet.50");
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
