@@ -13,6 +13,8 @@ A React Web App for doing certain things with Genshin Impact's namecards!
 
 It might not amount to anything, this is just an idea I happened to have.
 
+You can find the current version of the app here: https://namecard-tools.vercel.app/
+
 
 ## Getting Started
 
