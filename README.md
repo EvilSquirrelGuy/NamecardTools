@@ -16,22 +16,12 @@ It might not amount to anything, this is just an idea I happened to have.
 You can find the current version of the app here: https://namecard-tools.vercel.app/
 
 
-## Getting Started
+## Developing
 
-First, run the development server:
+To start the local development server, run:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+```zsh
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then you can open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
