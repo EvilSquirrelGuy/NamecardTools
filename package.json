@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.5",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@types/negotiator": "^0.6.3",
     "enkanetwork.js": "^2.8.9",
     "fontawesome": "^5.6.3",
+    "negotiator": "^0.6.3",
     "next": "14.2.15",
     "next-intl": "^3.21.1",
     "react": "^18",
