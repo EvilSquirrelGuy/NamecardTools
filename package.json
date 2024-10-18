@@ -16,6 +16,7 @@
     "enkanetwork.js": "^2.8.9",
     "fontawesome": "^5.6.3",
     "next": "14.2.15",
+    "next-intl": "^3.21.1",
     "react": "^18",
     "react-dom": "^18"
   },

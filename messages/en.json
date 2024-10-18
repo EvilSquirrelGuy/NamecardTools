@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "title": "Namecard Tools",
+    "settings": "Settings"
+  },
+  "Footer": {
+    "github_link": "Project GitHub",
+    "download_gi": "Download Genshin"
+  },
+  "Home": {
+    "under_construction": "Under construction...",
+    "follow_dev": "Follow Development"
+  }
+}
