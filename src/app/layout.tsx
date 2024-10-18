@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 //import { useState } from "react";
 
 import { roboto } from "@/app/fonts";
@@ -11,7 +11,6 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Namecard Tools",
   description: "Web app for doing stuff with Genshin namecards.",
-  themeColor: "#4c1d95",
   icons: {
     icon: [
       {
@@ -38,6 +37,10 @@ export const metadata: Metadata = {
   },
   authors: [{name: "EvilSquirrelGuy", url: "https://github.com/EvilSquirrelGuy"}],
 };
+
+export const viewport: Viewport = {
+  themeColor: "#4c1d95",
+}
 
 export default function RootLayout({
   children,
