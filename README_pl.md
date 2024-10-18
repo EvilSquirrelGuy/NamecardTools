@@ -1,4 +1,4 @@
-[EN :flag_gb:](README.md) | **PL :flag_pl:**
+[EN 🇬🇧](README.md) | **PL 🇵🇱**
 
 NamecardTools
 =============
