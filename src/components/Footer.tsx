@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faD, faDownload, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import { useTranslations } from "next-intl";
