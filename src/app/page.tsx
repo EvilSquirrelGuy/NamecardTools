@@ -14,7 +14,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-middle sm:align-middle">
         <p>🚧 Under construction...</p>
         <a
-          className="flex shadow-md hover:shadow-xl bg-violet-600 hover:bg-violet-500 transition-all px-4 py-2 items-center rounded-lg" href="https://github.com/EvilSquirrelGuy/NamecardTools"
+          className="flex shadow-md hover:shadow-xl bg-violet-600 hover:bg-violet-500 transition-all duration-300 px-4 py-2 items-center rounded-lg" href="https://github.com/EvilSquirrelGuy/NamecardTools"
         >
           Follow Development
           <FontAwesomeIcon icon={faArrowRight} className="pl-2 fa-md"></FontAwesomeIcon>
