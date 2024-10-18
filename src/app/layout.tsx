@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+//import { useState } from "react";
+
 import { roboto } from "@/app/fonts";
 import "./globals.css";
 
@@ -15,6 +17,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className={`${roboto.className} antialiased`}>

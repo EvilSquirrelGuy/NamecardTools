@@ -12,11 +12,10 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-middle sm:align-middle">
-        <h1 className={`${roboto_slab.className} text-2xl font-semibold`}>
-          Namecard Tools
-        </h1>
         <p>🚧 Under construction...</p>
-        <a className="flex shadow-md hover:shadow-xl bg-violet-600 border-violet-800 hover:bg-violet-500 transition-all px-4 py-2 items-center rounded-lg" href="https://github.com/EvilSquirrelGuy/NamecardTools">
+        <a
+          className="flex shadow-md hover:shadow-xl bg-violet-600 hover:bg-violet-500 transition-all px-4 py-2 items-center rounded-lg" href="https://github.com/EvilSquirrelGuy/NamecardTools"
+        >
           Follow Development
           <FontAwesomeIcon icon={faArrowRight} className="pl-2 fa-md"></FontAwesomeIcon>
         </a>
