@@ -4,8 +4,8 @@ import { roboto_slab } from "@/app/fonts";
 // import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 
 export default function Home() {
@@ -20,16 +20,6 @@ export default function Home() {
           <FontAwesomeIcon icon={faArrowRight} className="pl-2 fa-md"></FontAwesomeIcon>
         </a>
       </main>
-      <footer className="flex flex-row gap-8 row-start-3 items-center sm:items-start">
-        <a className="text-violet-500 hover:text-violet-300 transition-all" href="https://github.com/EvilSquirrelGuy">
-          <FontAwesomeIcon icon={faGithub} className="pr-2 fa-sm"></FontAwesomeIcon>
-          Check out my GitHub
-        </a>
-        <a className="text-violet-500 hover:text-violet-300 transition-all" href="https://genshin.hoyoverse.com/en">
-          <FontAwesomeIcon icon={faDownload} className="pr-2 fa-sm"></FontAwesomeIcon>
-          Genshin Impact
-        </a>
-      </footer>
     </div>
   );
 }

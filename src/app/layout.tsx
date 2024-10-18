@@ -5,6 +5,7 @@ import { roboto } from "@/app/fonts";
 import "./globals.css";
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className={`${roboto.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
