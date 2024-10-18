@@ -25,3 +25,11 @@ pnpm dev
 ```
 
 Then you can open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## APIs and Resources to use
+
+* enka.network
+  * API Docs: https://api.enka.network/#/api
+  * Loading images: https://api.enka.network/#/api?id=icons-and-images
+  * Namecard data: https://github.com/EnkaNetwork/API-docs/blob/master/store/namecards.json
