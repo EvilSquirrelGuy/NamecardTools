@@ -1,8 +1,9 @@
 // import Image from "next/image";
 import { roboto_slab } from "@/app/fonts";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles";
+import Header from "@/components/Header";
 
+// import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -11,6 +12,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <Header></Header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-middle sm:align-middle">
         <h1 className={`${roboto_slab.className} text-2xl font-semibold`}>
           Namecard Tools
