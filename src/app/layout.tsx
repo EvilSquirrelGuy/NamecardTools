@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { roboto } from "@/app/fonts";
 import "./globals.css";
 
+import Header from "@/components/Header";
+
 
 export const metadata: Metadata = {
   title: "Namecard Tools",
@@ -15,9 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className} antialiased`}
-      >
+      <body className={`${roboto.className} antialiased`}>
+        <Header />
         {children}
       </body>
     </html>
