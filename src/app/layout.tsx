@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Namecard Tools",
   description: "Web app for doing stuff with Genshin namecards.",
+  themeColor: "#4c1d95",
   icons: {
     icon: [
       {
@@ -29,6 +30,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  openGraph: {
+    siteName: "Namecard Tools",
+    locale: "en_GB",
+    url: "https://namecard-tools.vercel.app/",
+    type: "website",
+  },
+  authors: [{name: "EvilSquirrelGuy", url: "https://github.com/EvilSquirrelGuy"}],
 };
 
 export default function RootLayout({
