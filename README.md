@@ -29,7 +29,9 @@ Then you can open [http://localhost:3000](http://localhost:3000) with your brows
 
 ## APIs and Resources to use
 
-* enka.network
-  * API Docs: https://api.enka.network/#/api
-  * Loading images: https://api.enka.network/#/api?id=icons-and-images
-  * Namecard data: https://github.com/EnkaNetwork/API-docs/blob/master/store/namecards.json
+* enkanetwork.js
+  * https://www.npmjs.com/package/enkanetwork.js#asset-finder
+* ~~enka.network~~
+  * ~~API Docs: https://api.enka.network/#/api~~
+  * ~~Loading images: https://api.enka.network/#/api?id=icons-and-images~~
+  * ~~Namecard data: https://github.com/EnkaNetwork/API-docs/blob/master/store/namecards.json~~
