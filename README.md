@@ -1,3 +1,5 @@
+**EN :flag_gb:** | [PL :flag_pl:](README_pl.md)
+
 NamecardTools
 =============
 
