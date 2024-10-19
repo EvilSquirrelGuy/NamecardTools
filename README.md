@@ -29,7 +29,21 @@ pnpm dev
 Then you can open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## APIs and Resources to use
+## Localisation
+
+This project supports different UI languages. I've added a couple as an example, but if you notice an issue with one of my 
+translations or would like to contribute by translating the UI to your own language, do the following.
+
+1. Copy `messages/en.json` to `messages/xx.json` (where `xx` is the locale code for your language.)
+2. Translate all the strings to said language.
+3. Add the language code to `src/i18n/config.ts` in the following places:
+  * The `locales` field
+  * The `localeData` field
+  * *These should follow the pattern already outlined in there.*
+4. Add the json file to a pull request and wait patiently for feedback/changes.
+
+
+## APIs and Libraries
 
 * enkanetwork.js
   * https://www.npmjs.com/package/enkanetwork.js#asset-finder

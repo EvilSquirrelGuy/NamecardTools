@@ -29,6 +29,25 @@ pnpm dev
 Potem możecie odwiedzić [http://localhost:3000](http://localhost:3000) w przeglądarcę aby zobaczyć aktualną wersję.
 
 
+## Lokalizowanie
+
+## Localisation
+
+This project supports different UI languages. I've added a couple as an example, but if you notice an issue with one of my 
+translations or would like to contribute by translating the UI to your own language, do the following.
+
+UI tego projektu jest dostępne w różnych językach. Dodałem parę jako przykład, ale jeżeli zauważycie problem z jedym z moich
+tłumaczeń, albo byście chcieli wesprzeć rozwój projeku poprzez tłumaczenie UI na swój język, zróbcie następujące rzeczy.
+
+1. Przekopiujcie `messages/en.json` do `messages/xx.json` (gdzie `xx` to kod lokala na twój język.)
+2. Przetłumaczcie wszystkie hasła.
+3. Dodajcie kod języka do `src/i18n/config.ts` w następujących miejscach:
+  * W `locales`
+  * W `localeData`
+  * *Powinny mieć ten sam format co istniejące hasła*
+4. Dodajcie plik JSON do pull requesta poczekajcie aż sprawdzę/zmienie treść.
+
+
 ## API i Biblioteki
 
 * enkanetwork.js
