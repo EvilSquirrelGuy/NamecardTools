@@ -8,7 +8,7 @@ NamecardTools
 ![główny język](https://img.shields.io/github/languages/top/EvilSquirrelGuy/NamecardTools)
 ![problemy i pull requesty](https://img.shields.io/github/issues/EvilSquirrelGuy/NamecardTools)
 ![ostatni commit](https://img.shields.io/github/last-commit/EvilSquirrelGuy/NamecardTools)
-![status projektu](https://img.shields.io/badge/project_status-ideas-8a2be2)
+![status projektu](https://img.shields.io/badge/project_status-draft-8a2be2)
 
 
 Aplikacja internetowa do robienia różnych rzeczy z namecard'ami z Genshin Impact!
