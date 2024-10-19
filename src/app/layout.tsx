@@ -8,6 +8,7 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getUserLocale } from "@/service/locale";
 
 
 export const metadata: Metadata = {
@@ -44,11 +45,7 @@ export const viewport: Viewport = {
   themeColor: "#4c1d95",
 }
 
-export default async function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({children}: {children: React.ReactNode}) {
 
   const locale = await getLocale();
   const messages = await getMessages();

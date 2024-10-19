@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
 
-  const t = useTranslations("Footer");
+  const t = useTranslations("footer");
 
   const FooterLink = ({text, url, icon}: {text: string, url: string, icon: IconDefinition}) => (
     <a className="text-violet-500 hover:text-violet-300 transition-all" href={url}>

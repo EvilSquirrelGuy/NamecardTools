@@ -1,3 +1,4 @@
+'use server';
 import { getRequestConfig } from "next-intl/server";
 import { getUserLocale } from "@/service/locale";
 

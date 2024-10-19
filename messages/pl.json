@@ -1,14 +1,25 @@
 {
-  "Header": {
-    "title": "Narzędzia Namecard",
-    "settings": "Ustawienia"
+  "header": {
+    "title": "Narzędzia Namecard"
   },
-  "Footer": {
+  "footer": {
     "github_link": "Project na GitHubie",
     "download_gi": "Ściągnij Genshin"
   },
-  "Home": {
+  "home": {
     "under_construction": "W budowie...",
     "follow_dev": "Śledź rozwój"
+  },
+  "settings": {
+    "settings": "Ustawienia",
+    "language": "Język",
+    "close": "Zamknij",
+    "save": "Zapisz",
+    "languages": {
+      "en": "angielski",
+      "pl": "polski",
+      "fr": "francuski",
+      "select": "Wybierz Język..."
+    }
   }
 }
