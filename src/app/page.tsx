@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import "@fortawesome/fontawesome-svg-core/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Namecard from "@/components/Namecard";
 
 
 
