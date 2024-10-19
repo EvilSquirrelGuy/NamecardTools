@@ -6,7 +6,7 @@ const { genshin } = new AssetFinder();
 const namecardRoles = ["list", "profile"]
 type NamecardRole = (typeof namecardRoles)[number]
 
-export default async function Namecard({id, role="banner"}: {id: number, role?: NamecardRole}) {
+export default async function Namecard({id, role="banner"}: {id: number | string, role?: NamecardRole}) {
   
   const namecard = genshin.namecard(id)
 
@@ -15,7 +15,7 @@ export default async function Namecard({id, role="banner"}: {id: number, role?: 
   ])
 
   return (
-    <div className="container flex flex-col p-4 rounded-md border-violet-300 border-2 w-fit">
+    <div className="container flex flex-col p-4 rounded-md border-violet-300 border-2 w-fit" key={id}>
       <Image
         src={namecardUrl}
         alt={namecard.name}
