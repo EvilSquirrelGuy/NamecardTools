@@ -27,11 +27,11 @@ export default async function Profile(
 
   return (
     <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <div className="container w-auto p-4">
-        <h1 className="text-xl">{username}</h1>
+      <div className="w-auto p-4">
+        <h1 className="text-xl font-semibold">{username}</h1>
         <p>{signature}</p>
       </div>
-      <div className="container grid grid-cols-4 grid-rows-4 gap-4 mx-auto">
+      <div className="container grid grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-rows-4 gap-4 mx-auto">
         {namecards.map((namecard) => (
           <Namecard id={namecard.id} role="profile"/>
         ))}
