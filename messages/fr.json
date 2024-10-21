@@ -1,6 +1,6 @@
 {
   "header": {
-    "title": "Outils de Namecard"
+    "title": "Outils de Thèmes"
   },
   "footer": {
     "github_link": "Projet sur GitHub",
@@ -8,7 +8,9 @@
   },
   "home": {
     "under_construction": "En cours de construction...",
-    "follow_dev": "Suivre Développement"
+    "follow_dev": "Suivre Développement",
+    "enter_uid": "Entrez UID",
+    "see_namecards": "Voir Thèmes"
   },
   "settings": {
     "settings": "Réglages",

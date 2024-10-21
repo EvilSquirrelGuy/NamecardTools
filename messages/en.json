@@ -8,7 +8,9 @@
   },
   "home": {
     "under_construction": "Under construction...",
-    "follow_dev": "Follow Development"
+    "follow_dev": "Follow Development",
+    "enter_uid": "Enter UID",
+    "see_namecards": "See Namecards"
   },
   "settings": {
     "settings": "Settings",

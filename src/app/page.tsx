@@ -14,6 +14,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Namecard from "@/components/Namecard";
 import { Input } from "@headlessui/react";
+import { redirect } from "next/dist/server/api-utils";
+import { redirectToUID } from "@/service/redirect";
 
 
 export default function Home() {
@@ -21,14 +23,17 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-middle sm:align-middle">
-        <h1 className={`${roboto_slab.className} text-lg`}>Enter UID:</h1>
-        <Input type="text" pattern="[0-9]{9-10}" className="p-2 bg-violet-900 rounded-md focus:border-violet-200 border-b-2 border-transparent outline-none placeholder:text-violet-200/50" placeholder="Enter UID..." />
-        <a
-          className="flex shadow-md hover:shadow-xl bg-violet-600 hover:bg-violet-500 transition-all duration-300 px-4 py-2 items-center rounded-lg gap-2 cursor-pointer"
-        >
-          See Namecards!
-          <FontAwesomeIcon icon={faArrowRight} className="fa-md"></FontAwesomeIcon>
-        </a>
+        <h1 className={`${roboto_slab.className} text-lg`}>{t("enter_uid")}:</h1>
+        <form action={redirectToUID} className="container flex flex-col items-center sm:align-middle gap-4">
+          <Input type="text" name="uid" pattern="[0-9]{9-10}" className="p-2 bg-violet-900 rounded-md focus:border-violet-200 border-b-2 border-transparent outline-none placeholder:text-violet-200/50" placeholder={`${t("enter_uid")}...`} />
+          <button
+            className="flex shadow-md hover:shadow-xl bg-violet-600 hover:bg-violet-500 transition-all duration-300 px-4 py-2 items-center rounded-lg gap-2 cursor-pointer"
+            type="submit"
+          >
+            {t("see_namecards")}!
+            <FontAwesomeIcon icon={faArrowRight} className="fa-md"></FontAwesomeIcon>
+          </button>
+        </form>
       </main>
     </div>
   );
