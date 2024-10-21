@@ -1,3 +1,9 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
 import Namecard from "@/components/Namecard";
 import { Wrapper, AssetFinder } from "enkanetwork.js";
 import Image from "next/image";
@@ -25,7 +31,7 @@ export default async function Profile(
         <h1 className="text-xl">{username}</h1>
         <p>{signature}</p>
       </div>
-      <div className="container grid grid-rows-4 grid-cols-4 gap-2 mx-auto">
+      <div className="container grid grid-rows-4 grid-cols-4 gap-4 mx-auto">
         {namecards.map((namecard) => (
           <Namecard id={namecard.id} role="profile"/>
         ))}
