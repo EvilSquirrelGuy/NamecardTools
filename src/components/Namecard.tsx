@@ -6,6 +6,9 @@
 
 import Image from "next/image";
 import { AssetFinder } from "enkanetwork.js";
+import { hywenhei_85w } from "@/app/fonts";
+import { getLocale } from "next-intl/server";
+import { getUserLocale } from "@/service/locale";
 
 const { genshin } = new AssetFinder();
 
@@ -21,15 +24,13 @@ export default async function Namecard({id, role="banner"}: {id: number | string
   ])
 
   return (
-    <div className="container flex flex-col p-4 rounded-md border-violet-300 border-2 w-fit" key={id}>
-      <Image
-        src={namecardUrl}
-        alt={namecard.name}
-        width={0} height={0}
-        className="h-auto w-64"
-        unoptimized={true}
-      />
-      <span className="text-lg font-semibold">{namecard.name}</span>
+    <div
+      className="container flex flex-col p-4 rounded-md border-violet-300 border-2 w-full h-48 hover:scale-105 transition-all duration-500"
+      key={id}
+      style={{backgroundImage: `url("${namecardUrl}")`, backgroundSize: "cover"}}
+    >
+      
+      <span className={`${hywenhei_85w.className} self-start mt-auto drop-shadow-sm`}>{namecard.name}</span>
     </div>
   )
 }
