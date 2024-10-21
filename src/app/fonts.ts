@@ -5,7 +5,7 @@
  */
 
 import { Roboto, Roboto_Slab } from "next/font/google";
-import Font from "next/font";
+import localFont from "next/font/local";
 
 
 export const roboto = Roboto({
@@ -17,5 +17,10 @@ export const roboto = Roboto({
 export const roboto_slab = Roboto_Slab({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin", "latin-ext"],
+  display: "swap"
+})
+
+export const hywenhei_85w = localFont({
+  src: "fonts/HyWenHei85W.ttf",
   display: "swap"
 })
