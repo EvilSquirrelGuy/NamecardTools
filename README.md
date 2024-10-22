@@ -47,6 +47,8 @@ translations or would like to contribute by translating the UI to your own langu
 
 * enkanetwork.js
   * https://www.npmjs.com/package/enkanetwork.js#asset-finder
+* dndkit - for drag and drop
+  * https://docs.dndkit.com/presets/sortable
 * ~~enka.network~~
   * ~~API Docs: https://api.enka.network/#/api~~
   * ~~Loading images: https://api.enka.network/#/api?id=icons-and-images~~

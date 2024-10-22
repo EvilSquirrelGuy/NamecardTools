@@ -31,11 +31,6 @@ Potem możecie odwiedzić [http://localhost:3000](http://localhost:3000) w przeg
 
 ## Lokalizowanie
 
-## Localisation
-
-This project supports different UI languages. I've added a couple as an example, but if you notice an issue with one of my 
-translations or would like to contribute by translating the UI to your own language, do the following.
-
 UI tego projektu jest dostępne w różnych językach. Dodałem parę jako przykład, ale jeżeli zauważycie problem z jedym z moich
 tłumaczeń, albo byście chcieli wesprzeć rozwój projeku poprzez tłumaczenie UI na swój język, zróbcie następujące rzeczy.
 
@@ -52,6 +47,8 @@ tłumaczeń, albo byście chcieli wesprzeć rozwój projeku poprzez tłumaczenie
 
 * enkanetwork.js
   * https://www.npmjs.com/package/enkanetwork.js#asset-finder
+* dndkit - na "drag and drop"
+  * https://docs.dndkit.com/presets/sortable
 * ~~enka.network~~
   * ~~API Docs: https://api.enka.network/#/api~~
   * ~~Loading images: https://api.enka.network/#/api?id=icons-and-images~~
