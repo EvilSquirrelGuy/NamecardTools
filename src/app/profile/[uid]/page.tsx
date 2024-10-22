@@ -12,11 +12,12 @@ const { genshin } = new Wrapper();
 
 
 export default async function Profile(
-  {params, searchParams}:
-  {params: { uid: string }, searchParams: { [key: string]: string | string[] | undefined }
+  {params}:
+  {params: Promise<{ uid: string }>
 }) {
 
-  const uid = (await params)["uid"]
+  const paramSet = await params
+  const uid = paramSet.uid
   
   const enkaProfile = await genshin.getPlayer(uid).catch(
     notFound
