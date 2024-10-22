@@ -5,9 +5,8 @@
  */
 
 import Namecard from "@/components/Namecard";
-import { Wrapper, AssetFinder } from "enkanetwork.js";
-import Image from "next/image";
-import { Suspense } from "react";
+import { Wrapper } from "enkanetwork.js";
+import { notFound } from "next/navigation";
 
 const { genshin } = new Wrapper();
 
@@ -18,8 +17,10 @@ export default async function Profile(
 }) {
 
   const uid = params["uid"]
-
-  const enkaProfile = await genshin.getPlayer(uid)
+  
+  const enkaProfile = await genshin.getPlayer(uid).catch(
+    notFound
+  )
   const username = enkaProfile.player.username
   const signature = enkaProfile.player.signature
   

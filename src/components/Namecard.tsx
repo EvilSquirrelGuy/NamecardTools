@@ -20,6 +20,7 @@ export default async function Namecard({id, role="banner"}: {id: number | string
   const namecard = genshin.namecard(id)
 
   const namecardUrl = genshin.toLink(namecard.assets.picPath[
+    id === 210001 ? 0 : // Genshin Impact: A New World - only has the "banner" style
     role === "list" ? 0 : 1  // the "friends-list" namecard style is at [0], the "banner" is at [1]
   ])
 

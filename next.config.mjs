@@ -11,6 +11,12 @@ const nextConfig = {
         hostname: "enka.network",
         port: "",
         pathname: "/ui/**"
+      },
+      {
+        protocol: "https",
+        hostname: "http.cat",
+        port: "",
+        pathname: "/**"
       }
     ]
   }
