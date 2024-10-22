@@ -9,15 +9,19 @@ import { Locale, locales, defaultLocale } from "@/i18n/config";
 const COOKIE_NAME = "NTS_LOCALE"
 
 export async function getUserLocale() {
-  const languageHeader = {"accept-language": headers().get("accept-language") || "en-GB,en;q=0.5"};
+  const headerStore = await headers();
+  const cookieStore = await cookies();
+
+  const languageHeader = {"accept-language": headerStore.get("accept-language") || "en-GB,en;q=0.5"};
   const negotiator = new Negotiator({ headers: languageHeader });
   const languages = negotiator.languages();
 
-  return cookies().get(COOKIE_NAME)?.value || (
+  return cookieStore.get(COOKIE_NAME)?.value || ( // cookie -> headers -> default
     match(languages, locales, defaultLocale) || defaultLocale 
   );
 }
 
 export async function setUserLocale(locale: Locale) {
-  cookies().set(COOKIE_NAME, locale);
+  const cookieStore = await cookies();
+  cookieStore.set(COOKIE_NAME, locale);
 }

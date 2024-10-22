@@ -16,7 +16,7 @@ export default async function Profile(
   {params: { uid: string }, searchParams: { [key: string]: string | string[] | undefined }
 }) {
 
-  const uid = params["uid"]
+  const uid = (await params)["uid"]
   
   const enkaProfile = await genshin.getPlayer(uid).catch(
     notFound
