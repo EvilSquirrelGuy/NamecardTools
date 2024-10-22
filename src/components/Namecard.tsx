@@ -15,7 +15,7 @@ const { genshin } = new AssetFinder();
 const namecardRoles = ["list", "profile"]
 type NamecardRole = (typeof namecardRoles)[number]
 
-export default async function Namecard({id, role="banner"}: {id: number | string, role?: NamecardRole}) {
+export default function Namecard({id, role="banner"}: {id: number | string, role?: NamecardRole}) {
   
   const namecard = genshin.namecard(id)
 

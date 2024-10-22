@@ -34,7 +34,7 @@ export default async function Profile(
       </div>
       <div className="container grid grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-rows-4 gap-4 mx-auto">
         {namecards.map((namecard) => (
-          <Namecard id={namecard.id} role="profile"/>
+          <Namecard id={namecard.id} role="profile" />
         ))}
       </div>
     </div>
