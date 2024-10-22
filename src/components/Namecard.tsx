@@ -25,12 +25,13 @@ export default async function Namecard({id, role="banner"}: {id: number | string
 
   return (
     <div
-      className="container flex flex-col p-4 rounded-md border-violet-300 border-2 w-full h-48 hover:scale-105 transition-all duration-500"
+      className="p-4 rounded-md border-violet-300 border-2 w-full h-0 pt-[47.62%] hover:scale-105 transition-all duration-500 relative z-0"
       key={id}
       style={{backgroundImage: `url("${namecardUrl}")`, backgroundSize: "cover"}}
     >
-      
-      <span className={`${hywenhei_85w.className} self-start mt-auto drop-shadow-sm`}>{namecard.name}</span>
+      <div className="relative t-0 b-0 r-0 l-0 flex flex-col-reverse align-bottom h-full w-full">
+        <span className={`${hywenhei_85w.className} self-start mt-auto drop-shadow-sm`}>{namecard.name}</span>
+      </div>
     </div>
   )
 }

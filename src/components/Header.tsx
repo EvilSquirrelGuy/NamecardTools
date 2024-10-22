@@ -17,7 +17,7 @@ import Link from "next/link";
 export default function Header() {
   const t = useTranslations("header");
   return (
-    <header className="flex w-full sticky top-0 justify-between p-4 bg-violet-950/50 backdrop-blur">
+    <header className="flex w-full sticky top-0 justify-between p-4 bg-violet-950/50 backdrop-blur z-20">
       <Link href="/" className="container flex flex-row gap-4">
           <Image
             src="/images/iconmark_white.svg" alt="NT" width={0} height={0} className="w-8 h-full"
