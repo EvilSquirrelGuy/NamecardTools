@@ -26,8 +26,9 @@ export default function SettingsButton() {
       <button
         className="p-2 border-indigo-200 rounded-md self-end border-1 hover:animate-[spin_0.5s_ease-out]"
         onClick={() => setIsOpen(true)}
+        title={t("settings")}
       >
-        <FontAwesomeIcon icon={faCog} className="fa-lg" title={t("settings")} />
+        <FontAwesomeIcon icon={faCog} className="fa-lg" />
       </button>
 
       {isOpen && createPortal(
