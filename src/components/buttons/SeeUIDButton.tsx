@@ -13,7 +13,7 @@ export default function SeeUIDButton() {
   
   return (
     <button
-      className={`flex shadow-md hover:shadow-xl bg-violet-600 hover:bg-violet-500 transition-all duration-300 px-4 py-2 items-center rounded-lg gap-2 cursor-pointer ${status.pending ? "bg-violet-600/50" : ""}`}
+      className={`flex shadow-md hover:shadow-xl hover:bg-violet-500 transition-all duration-300 px-4 py-2 items-center rounded-lg gap-2 ${status.pending ? "bg-violet-600/50 cursor-not-allowed" : "cursor-pointer bg-violet-600"}`}
       type="submit"
       disabled={status.pending ? true : false}
     >
