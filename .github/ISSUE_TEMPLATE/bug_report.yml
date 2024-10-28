@@ -1,0 +1,83 @@
+---
+name: Bug Report
+description: "Let me know if something's wrong with the app!"
+labels: bug
+title: "[BUG] "
+body:
+- type: markdown
+  attributes:
+    value: |
+      ## Welcome
+      Thanks for taking the time to report this bug! Before proceeding, please make sure there aren't already any open issues
+      related to the bug you're reporting, otherwise I *will* close the issue.
+      Also remember that this is just a hobby project so it might take a while before I look into it :)
+      
+- type: textarea
+  id: brief-description
+  attributes:
+    label: Provide a brief description of the bug
+    description: Explain a little about what the bug does, affects etc.
+  validations:
+    required: true
+    
+- type: textarea
+  id: repro
+  attributes:
+    label: Steps to reproduce
+    description: Provide a detailed list of steps to reproduce the bug
+    value: |
+      1.
+      2.
+      3.
+      ...
+  validations:
+    required: true
+    
+- type: textarea
+  id: expected-behaviour
+  attributes:
+    label: Expected behaviour
+    description: What you believe the app should do
+    
+- type: textarea
+  id: actual-behaviour
+  attributes:
+    label: Actual behaviour
+    description: What the app actually does
+    
+- type: markdown
+  attributes:
+    value: | 
+      ## System Info
+      Now I'm gonna need some info about the system you were using when the bug happened.
+      
+- type: input
+  id: os
+  attributes:
+    label: Operating System and Version
+    placeholder: e.g. macOS 15.1 or Windows 10 22H2
+  validations:
+    required: true
+    
+- type: input
+  id: browser
+  attributes:
+    label: Web Browser and Version
+    placeholder: e.g. Firefox Nightly 133.0a1 or Safari 18.1
+  validations:
+    required: true
+    
+- type: textarea
+  id: logs
+  attributes:
+    label: Related logs
+    description: Any relevant logs from the browser console that might be related to the error.
+  render: js
+
+- type: textarea
+  id: additional
+  attributes:
+    label: Additional info
+    description: "Any other relevant info that doesn't really belong anywhere else"
+    
+---
