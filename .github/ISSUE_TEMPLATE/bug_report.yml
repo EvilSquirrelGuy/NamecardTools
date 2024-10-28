@@ -72,7 +72,7 @@ body:
   attributes:
     label: Related logs
     description: Any relevant logs from the browser console that might be related to the error.
-  render: js
+    render: js
 
 - type: textarea
   id: additional
