@@ -1,0 +1,56 @@
+---
+name: Translation
+description: "Want to help translate the app? Use this template then!"
+labels: i18n
+title: "[i18n] "
+body:
+- type: markdown
+  attributes:
+    value: |
+      ## Welcome
+      Thank you for submitting a Pull Request for translating the app! If this PR
+      is related to an issue with translation, please make sure there aren't any 
+      open PRs related to the same issue!
+      If you want to contribute multiple new languages, please make a separate
+      PR for each one. Otherwise if you're just fixing issues keep it as one.
+      
+- type: input
+  id: lang
+  attributes:
+    label: Language/Locale
+    description: The English name(s) of the language(s) this PR is related to
+    placeholder: e.g. English (UK), Brazilian Portugese, Japanese
+  validations:
+    required: true
+
+- type: input
+  id: related
+  attributes:
+    label: Related Issues/PRs
+    descriptions: Link to any issues/PRs this PR is related to
+    placeholder: "e.g. #193"
+  validations:
+    required: false
+
+- type: dropdown
+  id: scope
+  attributes:
+    label: Scope
+    description: The scope of the changes, i.e. translation fixes or new languages
+    options:
+    - Translation Fixes/Improvements
+    - Expanding Existing Language
+    - New Language
+    - Other (explain in Additional Info)
+  validations:
+    required: true
+
+- type: textarea
+  id: additional-info
+  attributes:
+    label: Additional Info
+    description: Any other relevant info
+    placeholder: e.g. What strings had issues
+
+---
+    
