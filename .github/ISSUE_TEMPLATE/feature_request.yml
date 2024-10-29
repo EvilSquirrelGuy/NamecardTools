@@ -1,0 +1,33 @@
+---
+name: Feature Request
+description: "Got any ideas about something I could add to this? Pop them here!"
+labels: feature_request
+title: "[FEATURE] "
+body:
+- type: markdown
+  attributes:
+    value: |
+      ## Welcome
+      Thanks for taking the time to share your thoughts on how to improve my app. Before
+      submitting, please make sure that there aren't already any existing issues for the
+      feature you would like to be added.
+      Making multiple feature requests for the same thing won't improve your chances of
+      it being seen, it can however, get you blocked from this repository, so please
+      don't :)
+- type: input
+  id: area
+  attributes:
+    label: App area
+    description: Which area of the app would this affect?
+    placeholder: e.g. UI, Generation Logic
+  validations:
+    required: true
+- type: textarea
+  id: description
+  attributes:
+    label: Describe your proposed feature
+    description: i.e. How you would envision the app working if the feature was implemented, you can make concept art if you want
+    placeholder: Would a page look different, or a button exist that does something?
+  validations:
+    required: true
+---
