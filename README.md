@@ -8,7 +8,7 @@ NamecardTools
 ![top language](https://img.shields.io/github/languages/top/EvilSquirrelGuy/NamecardTools)
 ![Issues or Pull Requests](https://img.shields.io/github/issues/EvilSquirrelGuy/NamecardTools)
 ![last commit](https://img.shields.io/github/last-commit/EvilSquirrelGuy/NamecardTools)
-![project status](https://img.shields.io/badge/project_status-draft-8a2be2)
+![project status](https://img.shields.io/badge/project_status-on_hold-8a2be2)
 
 
 A NextJS Web App for doing certain things with Genshin Impact's namecards!
