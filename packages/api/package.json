@@ -6,8 +6,8 @@
     "dev": "bun src/index.ts"
   },
   "dependencies": {
-    "@namecardtools/utils": "*"
+    "@namecardtools/utils": "*",
+    "hono": "^4.7.9"
   },
   "type": "module"
 }
-
