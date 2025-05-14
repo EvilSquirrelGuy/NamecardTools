@@ -1,6 +1,7 @@
 {
   "name": "@namecardtools/api",
   "version": "0.1.0",
+  "main": "src/index.ts",
   "scripts": {
     "build": "bun build src/index.ts --outdir dist",
     "dev": "bun src/index.ts"
