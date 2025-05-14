@@ -8,7 +8,9 @@
   "dependencies": {
     "@namecardtools/utils": "*",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.6.0"
   },
   "type": "module",
   "devDependencies": {
