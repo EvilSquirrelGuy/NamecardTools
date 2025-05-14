@@ -1,4 +1,13 @@
 {
   "relatedProjects": ["prj_Y6iglkmK4h0C1ov9u25F8mcWkjmp"],
-  "framework": null
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    }
+  ],
+  "redirects": [
+    { "source": "/", "destination": "/api", "permanent": false }
+  ]
 }
