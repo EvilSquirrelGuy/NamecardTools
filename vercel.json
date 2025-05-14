@@ -4,7 +4,6 @@
     {
       "src": "packages/web/package.json",
       "use": "@vercel/static-build",
-      "buildCommand": "bun run build",
       "config": {
         "distDir": "packages/web/dist"
       }
