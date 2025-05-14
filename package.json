@@ -1,0 +1,20 @@
+{
+  "name": "namecardtools",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "packageManager": "bun@1.2.4",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev": "bunx turbo run dev",
+    "build": "bunx turbo run build",
+    "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "turbo": "^2.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.x"
+  }
+}

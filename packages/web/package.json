@@ -1,0 +1,20 @@
+{
+  "name": "@namecardtools/web",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@namecardtools/utils": "*",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.3.5"
+  }
+}
