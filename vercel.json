@@ -4,15 +4,24 @@
     {
       "src": "packages/web/package.json",
       "use": "@vercel/static-build",
+      "buildCommand": "bun run build",
       "config": {
         "distDir": "packages/web/dist"
       }
+    },
+    {
+      "src": "packages/api/index.ts",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "packages/web/dist/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "packages/api/$1"
     }
   ]
 }
