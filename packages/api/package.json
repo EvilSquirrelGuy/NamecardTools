@@ -1,10 +1,10 @@
 {
   "name": "@namecardtools/api",
   "version": "0.1.0",
-  "main": "index.ts",
+  "main": "api.ts",
   "scripts": {
-    "build": "bun build index.ts --outdir dist",
-    "dev": "bun index.ts"
+    "build": "bun build api.ts --outdir dist",
+    "dev": "bun api.ts"
   },
   "dependencies": {
     "@namecardtools/utils": "*",
