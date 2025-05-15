@@ -1,13 +1,7 @@
 {
   "relatedProjects": ["prj_Y6iglkmK4h0C1ov9u25F8mcWkjmp"],
   "framework": null,
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api"
-    }
-  ],
-  "redirects": [
-    { "source": "/", "destination": "/api", "permanent": false }
-  ]
+  "buildCommand": "bun install",
+  "installCommand": "bun install",
+  "devCommand": "bun dev"
 }
