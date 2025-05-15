@@ -1,6 +1,6 @@
 import { Hono } from "hono"
-import indexRoute from "./src/routes"
-import usersRoute from "./src/routes/users"
+import indexRoute from "./_routes"
+import usersRoute from "./_routes/users"
 
 const app = new Hono()
 const apiRouter = new Hono()

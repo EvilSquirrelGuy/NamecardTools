@@ -1,6 +1,6 @@
 import { Hono, type Context } from "hono";
 
-import { dummy } from "../handlers/dummy";
+import { dummy } from "../_handlers/dummy";
 
 
 const usersRoute = new Hono()

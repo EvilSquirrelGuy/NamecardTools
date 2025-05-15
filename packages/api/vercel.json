@@ -1,7 +1,13 @@
 {
   "relatedProjects": ["prj_Y6iglkmK4h0C1ov9u25F8mcWkjmp"],
-  "framework": null,
-  "buildCommand": "bun install",
-  "installCommand": "bun install",
-  "devCommand": "bun dev"
+  "rewrites": [{
+    "source": "/api/(.*)",
+    "destination": "/api"
+  }],
+  "functions": {
+    "api/index.ts": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  }
 }
