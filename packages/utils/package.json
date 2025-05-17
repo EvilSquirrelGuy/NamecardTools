@@ -1,9 +1,0 @@
-{
-  "name": "@namecardtools/utils",
-  "version": "0.1.0",
-  "scripts": {
-    "build": "bun build src/index.ts --outdir dist"
-  },
-  "type": "module"
-}
-
