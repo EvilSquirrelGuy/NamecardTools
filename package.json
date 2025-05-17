@@ -9,7 +9,9 @@
     "dev": "concurrently -n api,web -c magenta,cyan \"bun run dev:backend\" \"bun run dev:frontend\"",
     "dev:backend": "bun src/backend/index.ts",
     "dev:frontend": "vite dev",
-    "build": "vite build",
+    "build": "concurrently -n api,web -c magenta,cyan \"bun run build:backend\" \"bun run build:frontend\"",
+    "build:backend": "bun build src/backend/index.ts --outdir api/dist/index.js --minify --target node",
+    "build:frontend": "vite build",
     "clean": "rm -rf node_modules dist"
   },
   "devDependencies": {

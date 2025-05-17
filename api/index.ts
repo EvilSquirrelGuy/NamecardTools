@@ -1,4 +1,4 @@
-import app from "../src/backend/index";
+import app from "./dist/index.js";
 import { handle } from "hono/vercel";
 
 export const runtime = "nodejs";
