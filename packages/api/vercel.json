@@ -16,7 +16,7 @@
       "memory": 1024,
       "maxDuration": 60,
       "runtime": "@vercel/node@5.1.16",
-      "includeFiles": "api/**/*.ts"
+      "includeFiles": "dist/**.js"
     }
   }
 }
