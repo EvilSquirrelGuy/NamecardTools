@@ -1,13 +1,18 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
   "relatedProjects": ["prj_Y6iglkmK4h0C1ov9u25F8mcWkjmp"],
+  "framework": null,
   "rewrites": [{
-    "source": "/api/(.*)",
+    "source": "/(.*)",
     "destination": "/api"
   }],
   "functions": {
     "api/index.ts": {
       "memory": 1024,
-      "maxDuration": 60
+      "maxDuration": 60,
+      "runtime": "@vercel/node@5.1.16",
+      "includeFiles": "api/**/*.ts"
     }
   }
 }

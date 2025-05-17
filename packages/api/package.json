@@ -4,7 +4,8 @@
   "main": "api/index.ts",
   "scripts": {
     "start": "bun api/index.ts",
-    "dev": "bun api/index.ts"
+    "dev": "bun src/index.ts",
+    "build": "bun build src/index.ts --outdir dist"
   },
   "dependencies": {
     "@namecardtools/utils": "*",
