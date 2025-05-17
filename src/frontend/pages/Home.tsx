@@ -5,8 +5,8 @@ export default function Profile() {
 
   return (
     <>
-    <h1>Home</h1>
-    <Button>Hello!</Button>
+    <h1>Namecard Tools</h1>
+    <Button intent="primary" onClick={() => alert("It's Under Construction... what did you expect lol?")} >Under Construction 🚧</Button>
     </>
   );
 }

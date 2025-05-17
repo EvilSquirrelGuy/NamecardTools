@@ -9,6 +9,6 @@ type Props = ButtonProps & {
 
 export default function Button({ intent, size, disabled = false, onClick, children }: Props) {
   return (
-    <button className={button({ intent, size })} disabled={disabled} >{children}</button>
+    <button className={button({ intent, size })} disabled={disabled} onClick={onClick}>{children}</button>
   )
 }
