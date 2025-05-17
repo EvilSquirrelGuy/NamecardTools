@@ -7,6 +7,10 @@
     "source": "/(.*)",
     "destination": "/api"
   }],
+  "outputDirectory": "dist",
+  "buildCommand": "bun run build",
+  "devCommand": "bun run dev",
+  "installCommand": "bun install",
   "functions": {
     "api/index.ts": {
       "memory": 1024,
