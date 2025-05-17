@@ -33,7 +33,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   root: './src',
   build: {
-    outDir: 'dist'
+    outDir: '../dist'
   },
   customLogger: customLogger(),
 })
