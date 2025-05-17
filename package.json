@@ -14,13 +14,21 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.4.1",
     "chalk": "^5.4.1",
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "peerDependencies": {
     "typescript": "^5.x"
   },
   "dependencies": {
-    "hono": "^4.7.10"
+    "hono": "^4.7.10",
+    "react": "^19.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^7.6.0"
   }
 }

@@ -25,7 +25,7 @@
     "noPropertyAccessFromIndexSignature": false,
 
     // path aliases
-    "baseUrl": "src/",
+    "baseUrl": "./src/",
     "paths": {
       "@backend/*": ["backend/*"],
       "@frontend/*": ["frontend/*"],
