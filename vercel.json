@@ -15,7 +15,7 @@
     "api/index.ts": {
       "maxDuration": 60,
       "memory": 1024,
-      "runtime": "@vercel/node"
+      "runtime": "vercel/node@5.1.6"
     }
   }
 }
