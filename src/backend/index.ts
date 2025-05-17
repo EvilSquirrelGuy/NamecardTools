@@ -1,12 +1,8 @@
 import { Hono } from "hono";
 import { indexRouter } from "@backend/routes";
 
-const app = new Hono();
+const app = new Hono().basePath("/api");
 
-const apiRouter = new Hono();
-
-apiRouter.route("/", indexRouter)
-
-app.route("/api", apiRouter);
+app.route("/", indexRouter)
 
 export default app;
