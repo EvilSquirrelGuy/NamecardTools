@@ -1,18 +1,21 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
-  "builds": [
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "buildCommand": "bun run build",
+  "devCommand": "bun dev",
+  "rewrites": [
     {
-      "src": "apps/web/package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "apps/web/dist" }
-    },
-    {
-      "src": "apps/api/index.ts",
-      "use": "@vercel/node"
+      "source": "/api/(.*)",
+      "destination": "/api"
     }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "apps/api/$1" },
-    { "src": "/(.*)", "dest": "apps/web/dist/$1" }
-  ]
+  "functions": {
+    "api/index.ts": {
+      "maxDuration": 60,
+      "memory": 1024,
+      "runtime": "@vercel/node"
+    }
+  }
 }

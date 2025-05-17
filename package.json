@@ -6,16 +6,21 @@
   "packageManager": "bun@1.2.4",
   "workspaces": ["packages/*"],
   "scripts": {
-    "dev": "concurrently -n api,web -c magenta,cyan \"bun --cwd=packages/api run dev\" \"bun --cwd=packages/web run dev\"",
-    "build": "bunx turbo run build",
-    "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist"
+    "dev": "concurrently -n api,web -c magenta,cyan \"bun run dev:backend\" \"bun run dev:frontend\"",
+    "dev:backend": "bun src/backend/index.ts",
+    "dev:frontend": "vite dev",
+    "build": "vite build",
+    "clean": "rm -rf node_modules dist"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "concurrently": "^9.1.2",
-    "turbo": "^2.5.3"
+    "chalk": "^5.4.1",
+    "concurrently": "^9.1.2"
   },
   "peerDependencies": {
     "typescript": "^5.x"
+  },
+  "dependencies": {
+    "hono": "^4.7.10"
   }
 }
