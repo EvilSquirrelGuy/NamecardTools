@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tsconfigPaths from "vite-tsconfig-paths";
+import tailwindcss from '@tailwindcss/vite';
 import chalk from 'chalk'
 import type { Logger, LogType } from 'vite'
 
@@ -30,10 +31,11 @@ function customLogger(): Logger {
 }
 
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+  plugins: [react(), tsconfigPaths(), tailwindcss()],
   root: './src',
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
+    emptyOutDir: true,
   },
   customLogger: customLogger(),
 })
